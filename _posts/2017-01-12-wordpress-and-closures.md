@@ -22,8 +22,9 @@ $example('hello');
 
 I've been using closures in Laravel and higher-order functions and I've just
 recently started using WordPress again. Turns out that there are lots of
-opportunities to us closures where I wasn't using them before. You can use a
-closure when you're adding an action for example:
+opportunities to use closures where I wasn't using them before. 
+
+You can use a closure when you're adding an action for example:
 
 {% highlight php linenos %}
 <?php
