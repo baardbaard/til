@@ -31,5 +31,5 @@ If you use a dependency in a project, you should require the Composer generated
 suggests](http://composer.rarst.net/recipe/site-stack) doing that in
 `wp-config.php` and [Bedrock also seems to do it this
 way](https://github.com/roots/bedrock/blob/master/web/wp-config.php#L7). Once
-you've required the `autoload.php` somewhere It will autoload the classes of
+you've required the `autoload.php` somewhere it will autoload the classes of
 your dependencies. 
