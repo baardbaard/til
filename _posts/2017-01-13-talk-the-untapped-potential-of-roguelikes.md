@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Talk: The Untapped Potentials of Roguelikes"
+title:  "Talk: The Untapped Potential of Roguelikes"
 date:   2017-01-13 21:36:00 +0100
 categories: video gamedev
 ---
