@@ -8,7 +8,7 @@ Closures are anonymous functions that you can save to a variable if you're so
 inclined. Here we're saving a anonymous function to `$example` and we're using
 `$message` that we defined earlier:
 
-{% highlight php linenos %}
+``` php
 <?php
 $message = 'world';
 
@@ -18,7 +18,7 @@ $example = function ($arg) use ($message) {
 
 $example('hello');
 // Output: string(11) "hello world"
-{% endhighlight %}
+```
 
 I've been using closures in Laravel and higher-order functions and I've just
 recently started using WordPress again. Turns out that there are lots of
@@ -26,17 +26,17 @@ opportunities to use closures where I wasn't using them before.
 
 You can use a closure when you're adding an action for example:
 
-{% highlight php linenos %}
+``` php
 <?php
 add_action( 'init', function() {
     load_plugin_textdomain( 'your_text_domain', false, plugin_basename( PLUGIN_PATH
     ) . '/languages/' );
 }
-{% endhighlight %}
+```
 
 Or you might use it directly when you need a callback:
 
-{% highlight php linenos %}
+``` php
 <?php
 wp_add_dashboard_widget(
     'dashboard_widget',
@@ -45,5 +45,4 @@ wp_add_dashboard_widget(
         echo "Hello World, I'm a great Dashboard Widget.";
     }
 );
-{% endhighlight %}
-
+```

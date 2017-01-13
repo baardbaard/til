@@ -25,6 +25,7 @@ permalink: /:title
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 theme: minima
 gems:
   - jekyll-feed

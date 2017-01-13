@@ -19,12 +19,12 @@ Last thing I needed to fix was the `autoload.php` that I was requiring when I
 was working on the plugin independently.  I just needed to make sure to only
 include the `autoload.php` if the file exists, like this:
 
-{% highlight php linenos %}
+``` php
 <?php 
 if ( file_exists( __DIR__ .  '/vendor/autoload.php' ) ) { 
     require __DIR__ . '/vendor/autoload.php'; 
 } 
-{% endhighlight %}
+```
 
 If you use a dependency in a project, you should require the Composer generated
 `autoload.php` somewhere. [Rarst
